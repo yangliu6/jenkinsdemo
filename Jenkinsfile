@@ -20,5 +20,11 @@ pipeline{
             echo 'This is a deploy step'
         }
       }
+      post {
+         success {
+            echo 'Here we kickoff run job test'
+            build job: 'test'
+         }
+      }
     }
   }
