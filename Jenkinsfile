@@ -24,7 +24,7 @@ pipeline{
     post {
        success {
           echo 'Here we kickoff run job test'
-          build job: 'j'
+          build job: 'test'
        }
     }
   }
